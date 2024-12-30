@@ -1,0 +1,208 @@
+.guidelines {
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.guidelines h2 {
+  color: #2c3e50;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.guidelines ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.guidelines li {
+  font-size: 16px;
+  color: #34495e;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.guidelines li::before {
+  content: "\2022";
+  color: #3498db;
+  font-size: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.guidelines li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .guidelines {
+    padding: 15px;
+  }
+
+  .guidelines h2 {
+    font-size: 20px;
+  }
+
+  .guidelines li {
+    font-size: 14px;
+  }
+}
+
+
+/* Global Form Styles */
+form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form h2 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+form label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 4px;
+    display: block;
+}
+
+form input, form select, form textarea {
+    width: 98%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+form textarea {
+    height: 80px;
+    resize: none;
+}
+
+button {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #165bb8;
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-45deg);
+    transition: left 0.3s ease;
+}
+
+button:hover:before {
+    left: 100%;
+}
+
+.copy-btn {
+    background-color: #f1c40f;
+    color: #fff;
+    margin-bottom: 8px;
+    padding: 8px;
+    font-size: 12px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.05);
+}
+
+/* From Uiverse.io by KhaledMatalkah */ 
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+.custom-checkbox .checkmark::before {
+  content: "\2713";
+  font-size: 16px;
+  color: transparent;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #333;
+  border-color: #333;
+  transform: scale(1.1) rotateZ(360deg) rotateY(360deg);
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::before {
+  color: #fff;
+}
+
+.custom-checkbox:hover {
+  color: #666;
+}
+
+.custom-checkbox:hover .checkmark {
+  border-color: #666;
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.custom-checkbox input[type="checkbox"]:focus + .checkmark {
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.custom-checkbox .checkmark,
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  transition: background-color 1.3s, border-color 1.3s, color 1.3s, transform 0.3s;
+}

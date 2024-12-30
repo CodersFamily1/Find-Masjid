@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="footer.css">
+
+  <title>Opinion</title>
+  <style>
+   /* From Uiverse.io by gharsh11032000 */ 
+.form-container {
+  width: 350px;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 90%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: black;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 90%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: black;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: white;
+  font-weight: 600;
+  width: 40%;
+  background: black;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+h1{
+  text-align: center;
+  background-image: linear-gradient(to right, #FF5733, #FFC300);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+      
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Exo 2", sans-serif;
+}
+.backbtn{
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 137px;
+  display: none;
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Opinion Box</h1>
+    <hr>
+  </header>
+
+   <ol>
+     <li>আপনার এখানে দেওয়া তথ্য শুধু আমাদের টিম দেখতে পাবে । তাই আপনি নিশ্চিন্তে আপনার মতামত দিতে পারেন ।</li><br>
+     <li><b>যেহেতু এটি একটি ধর্মীয় প্ল্যাটফর্ম তাই কোন প্রকার 
+     অশ্লীল বাক্য দেওয়া থেকে দয়া করে বিরত থাকুন ।</b></li><br>
+     <li>অন্যথায় আইনগত ব্যবস্থা নেয়া হতে পারে ।  ধন্যবাদ </li>
+   </ol>
+   <hr>
+
+<br>
+<form name="submit-to-google-sheet">
+<div class="form-container">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="text" name="name" required="">
+          
+          <label for="number">Mobile Number</label>
+            <input type="number" id="number" name="number" required="" placeholder="+088 012 456 789">
+        </div>
+        <div class="form-group">
+          <label for="textarea">Write Your Opinion</label>
+          <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+        </div>
+        <button id="btn" class="form-submit-btn" type="submit">Submit</button>
+      <p id="white"></p>
+    </div>
+</form>
+      <a href="index.html" style="text-decoration: none"><button id="btn_back" class="backbtn">Go Back</button></a>
+
+<br><br><br>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Find Masjid</h3>
+      <p>আপনার আশেপাশের মসজিদ সম্পর্কে জানুন এবং তথ্য শেয়ার করুন। ইসলামি সম্প্রদায়ের মধ্যে সংযোগ তৈরি করুন।</p>
+    </div>
+    <div class="footer-section">
+      <h4>দ্রুত লিঙ্ক</h4>
+      <ul>
+        <li><a href="index.html">হোম</a></li>
+        <li><a href="#">মসজিদ যোগ করুন</a></li>
+        <li><a href="mailto:g">যোগাযোগ করুন</a></li>
+        <li><a href="Policy.html">প্রাইভেসি পলিসি</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>যোগাযোগ</h4>
+      <p><a style="color: white ; text-decoration: none" href="mailto:support@emasjid.com">support@FindMasjid.com</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p><a style="text-decoration: none ; color: white"  href="Policy.html">&copy; 2025 FindMasjid. সর্বস্বত্ব সংরক্ষিত।</a></p>
+  </div>
+</footer>
+<script>
+  const scriptURL = '' // দেওয়া লাগবে। 
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+  
+ let btn = document.getElementById('btn');
+  
+  btn.addEventListener('click', function(){
+    btn.style.display = 'none'; 
+    document.getElementById('white').innerText = 'Your Opinion Send Successfully'
+   document.getElementById('btn_back').style.display = 'block';
+
+  })
+ 
+</script>
+
+</body>
+</html>

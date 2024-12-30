@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Front-awesome!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="rahi.ico">
+  <link rel="stylesheet" href="loader.css">
+
+  <!-- End!-->
+  <!-- fornt-Family!-->
+  
+  <!-- End!-->
+  <title>Find Masjid.Com.BD</title>
+</head>
+
+<body>
+  <div class="rahimul" id="rahimul">
+    
+<div class="container">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+  </div>
+  
+  <div class="hero">
+    <header>
+      <div class="main-header">
+        <img src="logo.png" alt="logo">
+        <button id="menu-toggle" class="menu-toggle">☰ Menu</button>
+      </div>
+      <nav id="navbar" class="navbar">
+        <div class="nav-header">
+          <button id="home-icon" class="home-icon">❌</button>
+        </div>
+        <ul class="ul">
+          
+          <li class="li"><a href="#searchBar">Search &nbsp;<i class="fa-solid fa-magnifying-glass"></i></a></li>
+      
+          <li class="li"><a href="saved.html">Saved &nbsp;<i class="fa-solid fa-bookmark"></i></a></li>
+          
+          <li class="li"><a href="#all_service">Services &nbsp;<i class="fa-brands fa-usps"></i></a></li>
+          
+          <li class="li"><a href="donation.html">Donate &nbsp;<i class="fa-solid fa-hand-holding-dollar"></i></a></li>
+          
+          <li class="li"><a href="Policy.html">About Us &nbsp;<i class="fa-solid fa-circle-info"></i></a></li>
+          
+          <li class="li"><a href="singin.html">Log In &nbsp;<i class="fa-solid fa-right-to-bracket"></i></a></li>
+
+
+          <li class="li"><a href="singup.html">Sign Up&nbsp;<i class="fa-solid fa-user-plus"></i></a></li>
+
+
+          
+        </ul>
+      </nav>
+    </header>
+    <br>
+  </div>
+<div class="Search_Bar">
+  <h2>Search Any Masjid</mark></h2>
+  <span>
+<div class="group">
+  <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+  <input placeholder="Search By [Name,Location & Number]" id="searchBar" type="search" class="input">
+</div>
+      <!-- মসজিদের নাম দেখানোর এলিমেন্ট -->
+        <ul id="mosqueList"></ul>
+    <!-- বিস্তারিত তথ্য দেখানোর এলিমেন্ট -->
+    <div class="data">
+    <div id="details" style="display: none;">
+      <img id="myImage">
+      <h2 id="mosqueName"></h2>
+      <p><strong>অবস্থান:</strong> <span id="mosqueLocation"></span></p>
+      <p><strong>ইমাম:</strong> <span id="mosqueImam"></span></p>
+      <p><strong>যোগাযোগ:</strong> <span id="mosqueContact"></span></p>
+      <!--Rahi Add-->
+      <p><strong>ইতিহাস/তথ্য:</strong> <span id="mosqueDtails"></span></p>
+      <p><strong>বিস্তারিত:</strong> <a id="mosqueURL"><span>Official Page Click Here</a></span></p>
+
+      <button id="backButton">ফিরে যান</button>
+      <!--Revie option!-->
+<div class="like-dislike-container">
+	<div class="tool-box">
+		<button class="btn-close">×</button>
+	</div>
+	<p class="text-content">What did you think<br>of this post?</p>				
+	<div class="icons-box">
+		<div class="icons">
+			<label class="btn-label" for="like-checkbox">
+				<span class="like-text-content">134</span>
+				<input class="input-box" id="like-checkbox" type="checkbox">
+				<svg class="svgs" id="icon-like-solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 18.5-10.5 34.6-25.9 42.6C497 275.4 504 288.9 504 304c0 23.4-16.8 42.9-38.9 47.1c4.4 7.3 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z"></path></svg>
+				<svg class="svgs" id="icon-like-regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M323.8 34.8c-38.2-10.9-78.1 11.2-89 49.4l-5.7 20c-3.7 13-10.4 25-19.5 35l-51.3 56.4c-8.9 9.8-8.2 25 1.6 33.9s25 8.2 33.9-1.6l51.3-56.4c14.1-15.5 24.4-34 30.1-54.1l5.7-20c3.6-12.7 16.9-20.1 29.7-16.5s20.1 16.9 16.5 29.7l-5.7 20c-5.7 19.9-14.7 38.7-26.6 55.5c-5.2 7.3-5.8 16.9-1.7 24.9s12.3 13 21.3 13L448 224c8.8 0 16 7.2 16 16c0 6.8-4.3 12.7-10.4 15c-7.4 2.8-13 9-14.9 16.7s.1 15.8 5.3 21.7c2.5 2.8 4 6.5 4 10.6c0 7.8-5.6 14.3-13 15.7c-8.2 1.6-15.1 7.3-18 15.1s-1.6 16.7 3.6 23.3c2.1 2.7 3.4 6.1 3.4 9.9c0 6.7-4.2 12.6-10.2 14.9c-11.5 4.5-17.7 16.9-14.4 28.8c.4 1.3 .6 2.8 .6 4.3c0 8.8-7.2 16-16 16H286.5c-12.6 0-25-3.7-35.5-10.7l-61.7-41.1c-11-7.4-25.9-4.4-33.3 6.7s-4.4 25.9 6.7 33.3l61.7 41.1c18.4 12.3 40 18.8 62.1 18.8H384c34.7 0 62.9-27.6 64-62c14.6-11.7 24-29.7 24-50c0-4.5-.5-8.8-1.3-13c15.4-11.7 25.3-30.2 25.3-51c0-6.5-1-12.8-2.8-18.7C504.8 273.7 512 257.7 512 240c0-35.3-28.6-64-64-64l-92.3 0c4.7-10.4 8.7-21.2 11.8-32.2l5.7-20c10.9-38.2-11.2-78.1-49.4-89zM32 192c-17.7 0-32 14.3-32 32V448c0 17.7 14.3 32 32 32H96c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32H32z"></path></svg>
+				<div class="fireworks">
+					<div class="checked-like-fx"></div>
+				</div>
+			</label>
+		</div>
+		<div class="icons">
+			<label class="btn-label" for="dislike-checkbox">
+				<input class="input-box" id="dislike-checkbox" type="checkbox">
+				<div class="fireworks">
+					<div class="checked-dislike-fx"></div>
+				</div>
+				<svg class="svgs" id="icon-dislike-solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 18.5-10.5 34.6-25.9 42.6C497 275.4 504 288.9 504 304c0 23.4-16.8 42.9-38.9 47.1c4.4 7.3 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z"></path></svg>
+				<svg class="svgs" id="icon-dislike-regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M323.8 34.8c-38.2-10.9-78.1 11.2-89 49.4l-5.7 20c-3.7 13-10.4 25-19.5 35l-51.3 56.4c-8.9 9.8-8.2 25 1.6 33.9s25 8.2 33.9-1.6l51.3-56.4c14.1-15.5 24.4-34 30.1-54.1l5.7-20c3.6-12.7 16.9-20.1 29.7-16.5s20.1 16.9 16.5 29.7l-5.7 20c-5.7 19.9-14.7 38.7-26.6 55.5c-5.2 7.3-5.8 16.9-1.7 24.9s12.3 13 21.3 13L448 224c8.8 0 16 7.2 16 16c0 6.8-4.3 12.7-10.4 15c-7.4 2.8-13 9-14.9 16.7s.1 15.8 5.3 21.7c2.5 2.8 4 6.5 4 10.6c0 7.8-5.6 14.3-13 15.7c-8.2 1.6-15.1 7.3-18 15.1s-1.6 16.7 3.6 23.3c2.1 2.7 3.4 6.1 3.4 9.9c0 6.7-4.2 12.6-10.2 14.9c-11.5 4.5-17.7 16.9-14.4 28.8c.4 1.3 .6 2.8 .6 4.3c0 8.8-7.2 16-16 16H286.5c-12.6 0-25-3.7-35.5-10.7l-61.7-41.1c-11-7.4-25.9-4.4-33.3 6.7s-4.4 25.9 6.7 33.3l61.7 41.1c18.4 12.3 40 18.8 62.1 18.8H384c34.7 0 62.9-27.6 64-62c14.6-11.7 24-29.7 24-50c0-4.5-.5-8.8-1.3-13c15.4-11.7 25.3-30.2 25.3-51c0-6.5-1-12.8-2.8-18.7C504.8 273.7 512 257.7 512 240c0-35.3-28.6-64-64-64l-92.3 0c4.7-10.4 8.7-21.2 11.8-32.2l5.7-20c10.9-38.2-11.2-78.1-49.4-89zM32 192c-17.7 0-32 14.3-32 32V448c0 17.7 14.3 32 32 32H96c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32H32z"></path></svg>
+				<span class="dislike-text-content"></span>
+			</label>
+		</div>
+	</div>
+</div>
+      <!--End-->
+
+      
+    </div>
+    </div>
+    
+
+    <!-- কোনো মসজিদ না পাওয়া গেলে বার্তা -->
+    <p id="noResult" style="display: none; color: red; text-align: center;">
+      কোনো মসজিদ পাওয়া যায়নি!
+    </p>
+</div>
+  </span>
+</div>
+<br id="all_service">
+<h4>Services</h4>
+<hr class="hr1">
+<services>
+    <div class="all_service">
+      
+     <a href="https://quran.com/bn">
+    <div class="service1 alls">
+     <h3>E-Quran<br><br><i class="fa-solid fa-quran"></i></h3>
+    </a>
+    </div>
+    
+     <a href="#">
+   <div class="service1 alls">
+     <h3>Total Masjid <br><span style="color: green" id="masjid_count">1000</span></h3>
+      </a>
+     </div>
+    
+    <a href="saved.html">
+        <div class="service2 alls" >
+       <h3>Saved <br><br><i class="fa-solid fa-bookmark"></i></h3>
+    </a>
+    </div>
+    <a href="#searchBar">
+        <div class="service13 alls" >
+        <h3>Search Masjid <br><i class="fa-solid fa-magnifying-glass"></i></h3>
+    </a>
+    </div>
+    <a href="donation.html">
+            <div class="service16 alls">
+           <h3>Donate <br><br><i class="fa-solid fa-hand-holding-dollar faicon"></i></h3>
+     </a>
+    </div>
+    <a href="opinion.html">
+         <div class="service5 alls">
+          <h3>Your Opinion <br><i class="fa-solid fa-comment"></i></h3>
+    </a>
+    </div>
+    <a href="#">
+      <div class="service16 alls">
+        <h3 style="color: goldenrod">Add New Masjid<br><i class="fa-solid fa-plus fa-bounce"></i></h3>
+    </a>
+    </div>
+    
+        <a href="https://www.facebook.com/profile.php?id=61571156823686&mibextid=ZbWKwL">
+      <div class="service16 alls">
+        <h3 style="color : #0000ff">Join Facebook<br><i class="fa-brands fa-facebook fa-bounce"></i></h3>
+    </a>
+    </div>
+    
+        <a href="https://t.me/findmasjid">
+      <div class="service16 alls">
+        <h3 style="color: #40B1FF">Join Telegram<br><i class="fa-brands fa-telegram fa-bounce"></i></h3>
+    </a>
+    </div>
+    
+  </div>
+  
+</services>
+<br>
+<New_Masjid_Add>
+  <h4 style="color: red">Add A new Masjid On Our Platform</h4>
+<hr class="hr2">
+  <div class="addbtn_ma">
+<button class="buttonn">Add A Masjid &nbsp;<i class="fa-solid fa-plus"></i>
+</button>
+  </div>
+</New_Masjid_Add>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Find Masjid</h3>
+      <p>আপনার আশেপাশের মসজিদ সম্পর্কে জানুন এবং তথ্য শেয়ার করুন। ইসলামি সম্প্রদায়ের মধ্যে সংযোগ তৈরি করুন।</p>
+    </div>
+    <div class="footer-section">
+      <h4>দ্রুত লিঙ্ক</h4>
+      <ul>
+        <li><a href="#">হোম</a></li>
+        <li><a href="#searchBar">মসজিদ যোগ করুন</a></li>
+        <li><a href="mailto:g">যোগাযোগ করুন</a></li>
+        <li><a href="Policy.html">প্রাইভেসি পলিসি</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>যোগাযোগ</h4>
+      <p><a style="color: white ; text-decoration: none" href="mailto:support@emasjid.com">support@FindMasjid.com</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p><a style="text-decoration: none ; color: white"  href="Policy.html">&copy; 2025 FindMasjid. সর্বস্বত্ব সংরক্ষিত।</a></p>
+  </div>
+</footer>
+
+
+  <script src="nav.js"></script>
+  <script src="script.js"></script>
+  <script src="loader.js"></script>
+
+
+</body>
+
+</html>

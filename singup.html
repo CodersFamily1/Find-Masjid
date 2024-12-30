@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="zebralogo.f.png" type="image/x-icon">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%; 
+            max-width: 300px;
+            text-align: center;
+            position: relative;
+            margin: 10px;
+        }
+        img.logo {
+            width: 70px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #6a11cb;
+        }
+        h2 {
+            color: #333;
+            margin-top: 50px;
+            font-size: 18px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 6px;
+            margin: 6px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+        button {
+            width: 100%;
+            padding: 6px;
+            background-color: #2575fc;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background-color 0.3s;
+            margin-top: 8px;
+        }
+        button:hover {
+            background-color: #1a59b7;
+        }
+        .forgot-password {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .forgot-password a {
+            color: #2575fc;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h2 style="color: orangered">Create A New Account</h2>
+        <form id="signupForm">
+            <label for="number">Phone Number:</label>
+            <input type="text" id="number" name="number" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" onclick="signUp()">Sign Up</button>
+        </form>
+        <div class="forgot-password">
+            <span>Forgot Password? </span><a href="reset_password.html">Click here</a>
+        </div>
+    </div>
+
+    <script>
+        function signUp() {
+            var number = document.getElementById('number').value;
+            var password = document.getElementById('password').value;
+
+            // Check if user already signed up
+            if (localStorage.getItem('number') !== null) {
+                alert('You have already signed up. Please sign in.');
+                window.location.href = 'singin.html'; // Redirect to sign in page
+                return;
+            }
+
+            if (number && password) {
+                localStorage.setItem('number', number);
+                localStorage.setItem('password', password);
+                alert('Sign up successful!');
+                window.location.href = 'index.html';
+            } else {
+                alert('Please fill all fields!');
+            }
+        }
+    </script>
+</body>
+</html>

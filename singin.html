@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="google-adsense-account" content="ca-pub-1858295160343598">
+    
+    
+      <link rel="icon" href="zebralogo.f.png" type="image/x-icon">
+    
+    
+
+    
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 15px; /* Further reduced padding */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%; 
+            max-width: 300px; /* Further reduced max-width */
+            text-align: center;
+            position: relative;
+            margin: 10px; /* Reduced margin */
+        }
+        img.logo {
+            width: 70px; /* Further reduced logo size */
+            height: auto;
+            margin-bottom: 10px; /* Reduced margin below logo */
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: -40px; /* Adjusted position */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #6a11cb;
+        }
+        h2 {
+            color: #333;
+            margin-top: 50px;
+            font-size: 18px; /* Reduced font size */
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 6px; /* Further reduced padding for inputs */
+            margin: 6px 0; /* Further reduced margin between inputs */
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 12px; /* Adjusted font size */
+        }
+        button {
+            width: 100%;
+            padding: 6px; /* Further reduced padding for button */
+            background-color: #2575fc;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 12px; /* Adjusted font size */
+            transition: background-color 0.3s;
+            margin-top: 8px; /* Reduced space above button */
+        }
+        button:hover {
+            background-color: #1a59b7;
+        }
+        .create-account {
+            margin-top: 10px; /* Space above the link */
+            font-size: 12px; /* Adjusted font size */
+        }
+        .create-account button {
+            background-color: transparent;
+            color: #2575fc;
+            border: none;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .create-account button:hover {
+            color: #1a59b7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h2>Log In</h2>
+        <form id="signinForm">
+            <label for="number">Phone Number:</label>
+            <input type="text" id="number" name="number" required placeholder="Inter Your Name">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Create A Strong Password">
+            <button type="button" onclick="signIn()">Log In</button>
+        </form>
+        <div class="create-account">
+            <span>Create a new account?</span>
+            <button><a href="singup.html">Sing Up</a></button>
+        </div>
+    </div>
+
+    <script>
+        function signIn() {
+            var inputNumber = document.getElementById('number').value;
+            var inputPassword = document.getElementById('password').value;
+
+            var savedNumber = localStorage.getItem('number');
+            var savedPassword = localStorage.getItem('password');
+
+            if (inputNumber === savedNumber && inputPassword === savedPassword) {
+                alert('Sign in successful!');
+                window.location.href = 'index.html'; // Redirect to welcome page
+            } else {
+                alert('Phone number or password incorrect!');
+            }
+        }
+    </script>
+</body>
+</html>

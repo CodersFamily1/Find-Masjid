@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="rahi.ico">
+  <link rel="stylesheet" href="donation.css">
+  <link rel="stylesheet" href="footer.css">
+
+  <title>Donation From - Find Masjid</title>
+  <style>
+    /* হেডার স্টাইল */
+    body{
+      margin: 0px;
+      padding: 0px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #84D4EC;
+      color: white;
+    }
+
+    /* লোগোর স্টাইল */
+    .logo img{
+      width: 80px;
+    }
+
+    /* ফান্ড বক্সের স্টাইল */
+    .fund-box {
+      display: flex;
+      align-items: center;
+      padding: 8px 15px;
+      background-color: #f1f1f1;
+      color: #007BFF;
+      border-radius: 5px;
+      font-size: 16px;
+      flex-direction: row;
+    }
+
+    /* কয়েন চিহ্নের জন্য */
+    .coin-icon {
+      margin-left: 5px;
+      font-size: 20px;
+    }
+
+    /* মোবাইল রেসপন্সিভ স্টাইল */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: row;  /* মোবাইল স্ক্রীনে হেডারটি কলাম আকারে সাজানো হবে */
+        align-items: flex-start;  /* বাম দিকে সাজানো হবে */
+        padding: 15px;
+      }
+
+
+      .fund-box {
+        font-size: 14px;  /* মোবাইলের জন্য ফান্ড বক্সের ফন্ট সাইজ কমানো */
+        padding: 6px 12px;
+        margin-top: 10px;
+      }
+
+      .coin-icon {
+        font-size: 18px;  /* কয়েন চিহ্নের আকার কমানো */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- হেডার সেকশন -->
+  <header>
+    <!-- লোগো -->
+    <div class="logo">
+      <a href="index.html"><img src="logo.png" alt="logo.png">
+</a>
+    </div>
+
+    <!-- ফান্ড বক্স -->
+    <a href="#" style="text-decoration: none">
+      <div class="fund-box">
+  <span>জমা:</span>
+  <span>৳ 7545 Tk</span> <!-- এখানে আপনি ফাউন্ডেশনের টাকা পরিবর্তন করতে পারেন -->
+  <span class="coin-icon">🪙</span>
+</div>
+    </a>
+  </header>
+  
+  <guideline>
+      <div class="guidelines">
+    <h2>দানে সহায়তার নির্দেশনা এবং নীতি</h2>
+    <ul>
+      <li>এই ফর্মের মাধ্যমে আপনি যেকোনো মসজিদ অথবা আমাদের ফাউন্ডেশনকে দান করতে পারেন।</li>
+      <li>পেমেন্ট পদ্ধতি হিসেবে আপনি <strong>বিকাশ</strong> অথবা <strong>নগদ</strong> নির্বাচন করতে পারবেন।</li>
+      <li>দান করার পর, আপনার পেমেন্টের তথ্য (যেমন ট্রানজ্যাকশন আইডি এবং তারিখ) সঠিকভাবে প্রদান করুন।</li>
+      <li>আপনার দানের পরিমাণ এবং পেমেন্টের তথ্য সঠিকভাবে পূরণ করুন, যাতে আমরা আপনার দানটি সঠিকভাবে গ্রহণ করতে পারি।</li>
+      <li>আপনার দানে আপনি যে মসজিদ বা ফাউন্ডেশন নির্বাচন করেছেন, সেটি নিশ্চিত করুন।</li>
+      <li>যেকোনো প্রশ্ন বা সমস্যা হলে আমাদের সঙ্গে <a href="mailto:">যোগাযোগ</a> করুন।</li>
+    </ul>
+  </div>
+  </guideline>
+  <hr>
+  <form name="submit-to-google-sheet" method="POST">
+    <h2>ডোনেট ফরম</h2>
+  <label for="name">আপনার নাম:</label>
+  <input type="text" id="name" name="name" required placeholder="Your Name.."><br><br>
+
+  <label for="amount">দান পরিমাণ (টাকা):</label>
+  <input type="number" id="amount" name="amount" required placeholder="Amount"><br><br>
+
+  <label for="payment-method">পেমেন্ট পদ্ধতি:</label>
+  <select id="payment-method" name="payment_method" required>
+    <option value="bkash">বিকাশ</option>
+    <option value="nagad">নগদ</option>
+  </select><br><br>
+    <!-- Phone Number Section -->
+  <label for="phone-number">পাঠানোর নাম্বার <span style="color:red">(Send Money)</span></label>
+  <input type="text" id="phone-number" name="phone_number" value="01749643836" readonly><br>
+
+  <button type="button" onclick="copyNumber()">নম্বর কপি করুন</button><br>
+
+  <label for="masjid-selection">কোন মসজিদে দান করবেন?</label>
+  <select id="masjid-selection" name="masjid" required>
+    <option value="foundation" selected>আমাদের ফাউন্ডেশন</option>
+    <option value="sobhanbagh">সোবহানবাগ মসজিদ</option>
+    <option value="another_masjid">অন্য কোন মসজিদ</option>
+  </select><br><br>
+
+  <label for="transaction-id">ট্রানজ্যাকশন আইডি:</label>
+  <input type="text" id="transaction-id" name="transaction_id" required placeholder="Ex.Yzx18Gk6"><br><br>
+
+  <label for="payment-date">পেমেন্ট তারিখ:</label>
+  <input type="date" placeholder="Click And Selecte" id="payment-date" name="payment_date" required><br><br>
+
+  <label for="message">আপনার বার্তা (যদি থাকে):</label><br>
+  <textarea id="message" placeholder="Write Something..." name="message"></textarea><br><br>
+<label class="custom-checkbox">
+  <input name="dummy" type="checkbox" required>
+  <span class="checkmark"></span><span class="rahi-re" > <b>এখানে যা যা তথ্য দেয়া হয়েছে তা সব সত্য। </b></span>
+</label>
+<br><br>
+
+<button id="btn-sub" onclick="rahi()" type="submit">দান নিশ্চিত করুন</button>
+
+</form>
+<br><br>
+
+<script>
+  function copyNumber() {
+    var phoneNumberField = document.getElementById("phone-number");
+    phoneNumberField.select();
+    phoneNumberField.setSelectionRange(0, 99999); // For mobile devices
+    document.execCommand("copy");
+    alert("নম্বর কপি হয়ে গেছে!");
+  }
+</script>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Find Masjid</h3>
+      <p>আপনার আশেপাশের মসজিদ সম্পর্কে জানুন এবং তথ্য শেয়ার করুন। ইসলামি সম্প্রদায়ের মধ্যে সংযোগ তৈরি করুন।</p>
+    </div>
+    <div class="footer-section">
+      <h4>দ্রুত লিঙ্ক</h4>
+      <ul>
+        <li><a href="index.html">হোম</a></li>
+        <li><a href="#searchBar">মসজিদ যোগ করুন</a></li>
+        <li><a href="mailto:g">যোগাযোগ করুন</a></li>
+        <li><a href="Policy.html">প্রাইভেসি পলিসি</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>যোগাযোগ</h4>
+      <p><a style="color: white ; text-decoration: none" href="mailto:support@emasjid.com">support@FindMasjid.com</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p><a style="text-decoration: none ; color: white"  href="Policy.html">&copy; 2025 FindMasjid. সর্বস্বত্ব সংরক্ষিত।</a></p>
+  </div>
+</footer>
+
+  
+<script src="donation.js"></script>
+</body>
+</html>
